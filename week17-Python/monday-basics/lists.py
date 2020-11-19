@@ -1,7 +1,7 @@
 # Lists
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# supplies = ['crayons', 'pencils', 'paper', 'Kleenex', 'eraser']
-# print(supplies)
+supplies = ['crayons', 'pencils', 'paper', 'Kleenex', 'eraser']
+print(supplies)
 
 # supplies.append('markers')
 # print(supplies)
@@ -12,8 +12,8 @@
 # supplies.sort()
 # print(supplies)
 
-# supplies.sort(key=str.lower)
-# print(supplies)
+supplies.sort(key=str.lower)
+print(supplies)
 
 # -------
 
@@ -37,59 +37,6 @@
 # print(sum(scores) / len(scores))
 # print(sorted(scores, reverse=True))
 
-# TUPLES
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# a = (1, 2, 3, 4, 5, 6, 7, 8, 9)
-# b = ('a', 'b', 'c', 'd', 'e')
-# c = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 # without parans
-# print(a, b)
-
-# shopping = ('apples', 'milk', 'bread')
-# print(tuple(sorted(shopping)))
-
-# ------
-
-# shoppingStops = (  # Tuple of arrays
-#     ['bread', 'milk', 'eggs'],
-#     ['picture hooks'],
-# )
-
-# users = [ # list of tuples
-#     (1, 'user1'),
-#     (2, 'user2')
-# ]
-# print(shoppingStops)
-# print(shoppingStops[0][0])
-
-# ------
-
-# scores = (15, 22, 66, 34, 99, 29, 54)
-# print(scores)
-# print(max(scores))
-# print(sum(scores) / len(scores))
-# print(tuple(sorted(scores)))
-
-
-# def minmax(num):
-#     return min(num), max(num)
-
-
-# print(minmax(scores))
-# (lowest, highest) = minmax(scores)  # multiple returns from functions
-# print(highest, lowest)
-
-# ------
-
-# a = 1, 2, 3
-# b = ('a', 'b', 'c')
-
-# empty = ()
-# print(empty)
-
-# single = (1,)
-# print(single)
-
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # RANGES
@@ -107,87 +54,7 @@
 # for i in range(len(items)):
 #     print(i, items[i])
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# Dictionaries
-
-# book = {
-#     'title': 'Goodnight Moon',
-#     'rating': 7492,
-#     'stars': 50.5,
-#     'author': {
-#         'firstName': 'Aaron',
-#         'lastName': 'Hanson'
-#     },
-#     'images': ['goodnight.png', 'goodnight2.png'],
-# }
-# print(book)
-# print(len(book))
-
-# del book['stars']
-# print(book)
-
-# book['stars'] = 4.8
-# print(book)
-
-# for i in book:
-#     print(i, book[i])
-
-# ------------
-
-# pond = dict(
-#     depth=10,
-#     area='210 square feet',
-#     fish=['mary', 'bob', 'billy'],
-# )
-
-# print(pond)
-
-# alligator = dict([
-#     ('lifespan', 50),
-#     ('length', 3.4),
-#     ('apple', 1),
-#     ('banana', 'yum'),
-#     ('bee', 'yellow'),
-# ])
-
-# print(alligator)
-
-# keys = ['name', 'home runs', 'strikeouts', 'rbi']
-# values = ['Babe Ruth', 7214, 1330, 2214]
-# player = dict(zip(keys, values))
-# print(player)
-
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# SETS
-
-# a = set('banana')
-# b = set('scarab')
-# print(a, b)
-
-# print(a | b)
-# print(a.union(b))
-
-# print(a & b)
-# print(a.intersection(b))
-
-# print(a ^ b)
-# print(a.symmetric_difference(b))
-
-# print(a - b)
-# print(a.difference(b))
-
-# error
-# print(a + b) unsupported operand
-
-# purchasingEmails = ('bob@gmail.com', 'sam@yahoo.com', 'riley@rileymail.org')
-# helpEmails = ('jo@josbilling.com', 'bob@gmail.com', 'sam@yahoo.com')
-
-# print('Users making a purchase and also calling help desk')
-# print(set(purchasingEmails) & set(helpEmails))
-
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# -------------------------
 
 # PROCESSING LISTS
 
